@@ -30,13 +30,14 @@ body {
   background-size: cover;
   */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 #container {
-  width: 100%px;
+  width: 100% px;
   max-width: 580px;
   height: 712px;
 
@@ -161,4 +162,14 @@ footer {
   text-align: center;
   font-size: 14px;
   text-decoration: none;
+}
+
+/*media queries set a limit to change a bg*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
