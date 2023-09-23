@@ -131,6 +131,9 @@ ul li a {
 
   transition: background 0.2s;
 }
+.iconConfig {
+  margin-right: 0.5rem;
+}
 
 ul li a:hover {
   border-radius: 8px;
@@ -142,23 +145,32 @@ ul li a:hover {
 /*Social Links*/
 #social-links {
   display: flex;
+  gap: 1.6rem;
+  align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 24px 0;
-
-  font-size: 24px;
+  font-size: 2.8rem;
+  margin: 2rem 0;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  transition: background 0.5s;
 }
 #social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  font-size: 2rem;
 
   transition: background 0.2s;
   border-radius: 50%;
 }
-#social-links a:hover {
+#social-links:hover {
   background: var(--highlight-color);
+}
+#social-links p {
+  font-size: 1rem;
+  display: block;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
 }
 
 footer {
